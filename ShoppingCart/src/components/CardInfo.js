@@ -1,10 +1,10 @@
 import React from "react";
 import Button from "./reuasablecomponents/Button";
 
-const CardInfo = ()=>{
+const CardInfo = ({shoePrice})=>{
     return(
         <div className="cardInfo">
-          <p>Price</p> 
+          <p>${shoePrice}</p> 
           <Button />
         </div>
     )
