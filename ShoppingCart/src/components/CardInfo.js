@@ -1,11 +1,11 @@
 import React from "react";
 import Button from "./reuasablecomponents/Button";
 
-const CardInfo = ({shoePrice})=>{
+const CardInfo = ({shoePrice,updateCart})=>{
     return(
         <div className="cardInfo">
           <p>${shoePrice}</p> 
-          <Button />
+          <Button addItem={updateCart} />
         </div>
     )
 }
