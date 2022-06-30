@@ -1,12 +1,12 @@
 import React from "react";
 import Container from"./reuasablecomponents/Container";
 
-const Nav = () =>{
+const Nav = ({hiddenMenu,setHiddenMenu,itemCount}) =>{
     return(
        <nav>
            <Container>
                <h2>Shoes</h2>
-               <div className="menuWrapper"></div>
+               <div className="menuWrapper"onClick={()=>setHiddenMenu(!hiddenMenu)}></div>
            </Container>
        </nav>
     )

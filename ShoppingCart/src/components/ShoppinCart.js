@@ -10,7 +10,7 @@ const ShoppingCart = ({cartItems})=>{
              <p>x{item.cartCount}</p>
              <img src={item.img} alt="shoe"/>
              </div>
-             <div className="carPrice">
+             <div className="cardPrice">
                  <p>{item.price}$</p>
                  </div>
                  </div>
