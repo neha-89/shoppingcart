@@ -7,6 +7,7 @@ const Nav = ({hiddenMenu,setHiddenMenu,itemCount}) =>{
            <Container>
                <h2>Shoes</h2>
                <div className="menuWrapper"onClick={()=>setHiddenMenu(!hiddenMenu)}></div>
+               {/* <i className={hiddenmenu?"fas fa-times fa-lg":}></i>/> */}
            </Container>
        </nav>
     )
