@@ -2,8 +2,8 @@ import React from "react";
 import ShoppingCart from "./ShoppinCart";
 import TotalPrice from "./TotalPrice";
 
-const ShoppingCartContainer = ({props})=>{
-    const [hiddenMenu,cartItems,totalPrice,itemCount] = props;
+const ShoppingCartContainer = (props)=>{
+    const {hiddenMenu,cartItems,totalPrice,itemCount} = props;
     return(
       
         <div className ={`shoppingCartContainer ${!hiddenMenu? "" : "hidden"}`}>
