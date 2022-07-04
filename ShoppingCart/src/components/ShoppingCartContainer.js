@@ -6,7 +6,7 @@ const ShoppingCartContainer = ({props})=>{
     const [hiddenMenu,cartItems,totalPrice,itemCount] = props;
     return(
       
-        <div className="shoppingCartContainer">
+        <div className ={`shoppingCartContainer ${!hiddenMenu? "" : "hidden"}`}>
        <ShoppingCart cartItems ={cartItems}/>
        <TotalPrice totalPrice ={totalPrice} itemCount={itemCount}/>
         </div>
