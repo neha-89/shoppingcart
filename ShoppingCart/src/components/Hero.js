@@ -21,17 +21,18 @@ const Hero =()=> {
       result.count++;
       return;
 
-       setCartItems([...cartItems,
+       setCartItems([
+           ...cartItems,
         {img:shoeImg , price :shoePrice ,id :uuidv4(), cartCount: 1},
     ]);
-    }
+    };
   
 
     return(
         <section className="hero">
          <Nav itemCount ={itemCount} hiddenMenu={hiddenMenu} setHiddenMenu={setHiddenMenu} />
          <Container>
-             <CardContainer />
+             <CardContainer updateCart={updateCart}/>
              <ShoppingCartContainer  
              hiddenMenu={hiddenMenu}
              cartItems ={cartItems}
