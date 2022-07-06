@@ -16,11 +16,11 @@ const Hero =()=> {
       const updateCart = (shoeImg,shoePrice)=>{
       setItemCount(prevCount => prevCount + 1);
       setTotalPrice(prevPrice => prevPrice + shoePrice);
-      if(cartItems.find((item)=>item.img === shoeImg));
+      if(cartItems.find((item)=>item.img === shoeImg)){
       const result = cartItems.find((item)=>item.img === shoeImg);
       result.count++;
       return;
-
+      }
        setCartItems([
            ...cartItems,
         {img:shoeImg , price :shoePrice ,id :uuidv4(), cartCount: 1},
