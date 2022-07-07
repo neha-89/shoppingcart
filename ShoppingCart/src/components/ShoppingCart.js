@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const ShoppingCart = ({cartItems})=>{
+const ShoppingCart = ({cartItems,removeItem})=>{
     return(
         <div className="shoppingCart">
          {cartItems.map((item)=>{
@@ -12,6 +12,7 @@ const ShoppingCart = ({cartItems})=>{
              </div>
              <div className="cardPrice">
                  <p>{item.price}$</p>
+                <i onClick = {()=>removeItem(item.id)} className="fas-fa-times"></i>
                  </div>
                  </div>
          })}

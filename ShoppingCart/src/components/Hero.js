@@ -26,7 +26,9 @@ const Hero =()=> {
         {img:shoeImg , price :shoePrice ,id :uuidv4(), cartCount: 1},
     ]);
     };
-  
+   const removeItem = (id) => {
+
+   }
 
     return(
         <section className="hero">
@@ -37,7 +39,8 @@ const Hero =()=> {
              hiddenMenu={hiddenMenu}
              cartItems ={cartItems}
              itemCount={itemCount}
-             totalPrice={totalPrice}/>
+             totalPrice={totalPrice}
+             removeItem={removeItem}/>
          </Container>
         </section>
     )
