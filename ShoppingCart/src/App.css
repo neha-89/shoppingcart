@@ -62,6 +62,7 @@ nav {
 .cardContainer {
   width: 100%;
   max-width: 1100px;
+  
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -120,13 +121,13 @@ nav {
 }
 
 .shoppingCart {
-  width: 440px;
-  padding: 24px 0;
-  height: 642px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 642px;
+    width: 390px;
+    padding: 24px 0;
+    height: 619px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 619px;
   overflow: auto;
   background: linear-gradient(
     135deg,
@@ -207,8 +208,8 @@ nav {
 }
 
 .shoppingCartPrice {
-  width: 440px;
-  height: 100px;
+  width: 321px;
+  height: 78px;
   background: #fff;
   padding: 0 30px;
   display: flex;
@@ -263,7 +264,7 @@ nav {
   }
 }
 
-@media (max-width: 1645px) {
+@media (max-width: 1269px) {
   .container {
     max-width: 94%;
   }
