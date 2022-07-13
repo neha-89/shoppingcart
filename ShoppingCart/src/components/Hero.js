@@ -28,7 +28,18 @@ const Hero =()=> {
     ]);
     };
    const removeItem = (id) => {
+    const newItems = cartItems.filter(cartItem => cartItem.id !== id);
+    setCartItems(newItems);
 
+    const itemCountResult = newItems.reduce(
+        (acc,val) => (acc +=  val.cartCount),0
+    );
+    setItemCount(itemCountResult);
+
+    const priceResult =  newItems.reduce(
+    (acc,val) => (acc += val.price * val.cartCount),0
+    );
+    setItemCount(priceResult);
    }
 
     return(
