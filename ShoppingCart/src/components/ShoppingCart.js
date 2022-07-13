@@ -4,7 +4,7 @@ import React from "react";
 const ShoppingCart = ({cartItems,removeItem})=>{
     return(
         <div className="shoppingCart">
-         {cartItems.map((item)=>{
+         {cartItems.map(item=>{
              <div className="cardRow" key={item.id}>
                  <div className = "cardImg">
              <p>x{item.cartCount}</p>

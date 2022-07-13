@@ -30,4 +30,4 @@ export default [
         cardImg:ShoeSix,
         cardPrice:399
     },
-]
+];
